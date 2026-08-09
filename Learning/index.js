@@ -71,15 +71,59 @@
 
         // Array
         var arr=[23, 7, 79,"Gauri", 24, 23];
-        console.log(arr);
+        //console.log(arr);
 
         var arr1=[12, 65, "Peru", "Lotus", 76, "India", "Software-Developer"];
-        console.log(arr1);
+        //console.log(arr1);
 
         var arr2=["Apple","Mango", "Banana", "Grapes", "Pineapple"];
-        console.log(arr2);
+        //console.log(arr2);
 
         var arr3=["Gauri", "Sakshi","Priya", "Siya", "Riya","Ananya"];
-        console.log(arr3);
+        //console.log(arr3);
         
+        //4. Javascript Operators
+        // Arithmetic Operators
+        var a=100;
+        var b=60;
+        console.log("The Value of a+b is", a+b);
+        console.log("The Value of a-b is", a-b);
+        console.log("The Value of a*b is", a*b);
+        console.log("The Value of a/b is", a/b);
+
+        // Assignment Operators
+        var c=a;
+        c+=3;
+        c-=4;
+        console.log(c);
+
+        var x=65;
+        var y=78;
+        //console.log(x==y);
+        //console.log(x===y);
+        //console.log(x!=y);
+      
+        // Comparison Operators
+            //console.log(x>y);
+            //console.log(x<y);
+            //console.log(x>=y);
+            //console.log(x<=y);
+
+        // Logical Operators
+          // Logical AND
+              //console.log(true && true);
+              //console.log(true && false);
+              //console.log(false && false);
+
+           // Logical OR
+        console.log(true || true);
+        console.log(true || false);
+        console.log(false || true);
+        console.log(false || false);
+
+           //Logical NOT
+           console.log(!true);
+           console.log(!false);
+
+
 
