@@ -74,5 +74,12 @@
         console.log(arr);
 
         var arr1=[12, 65, "Peru", "Lotus", 76, "India", "Software-Developer"];
+        console.log(arr1);
+
+        var arr2=["Apple","Mango", "Banana", "Grapes", "Pineapple"];
+        console.log(arr2);
+
+        var arr3=["Gauri", "Sakshi","Priya", "Siya", "Riya","Ananya"];
+        console.log(arr3);
         
 
