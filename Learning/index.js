@@ -125,5 +125,95 @@
            console.log(!true);
            console.log(!false);
 
+        
+        //Functions
+        // DRY - Do not Repeat Yourself
+        function avg(a, b) {
+            return (a + b) / 2;
+        }
+        c1=avg(4,7);
+        c2=avg(8,2);
+        console.log(c1,c2);
+
+        function sum(x, y)
+        {
+            return (x+y);
+        }
+        c3=sum(15,50);
+        console.log(c3);
+
+        function mul(p, q)
+        {
+            return (p*q);
+        }
+        c4=mul(45, 90);
+        console.log(c4);
+
+        //Conditional Statements in Javascript
+        //if statement
+        var age=56;
+        if(age>18){
+            console.log('You are not a kid');
+        }
+
+        var marks=80;
+        if(marks>40)
+        {
+            console.log('You are Pass');
+        }
+        
+        //if else statement
+        var age1=45;
+        if(age1<18){
+         console.log('You are not eligible for vote');
+        }
+        else
+        {
+            console.log('You are eligible for vote');
+        }
+
+        //if else ladder
+        /* var marks=91;
+        if(marks>90)
+        {
+            console.log("You are Genius student")
+        }
+        else if(marks>80)
+        {
+            console.log('You are in merit');
+        }
+        else if(marks>60)
+        {
+            console.log('You are an average student');
+        }
+        else if(marks>40)
+        {
+            console.log('You are only pass');
+        }
+        else{
+            console.log('You are Fail');
+        }  */
+
+        //Loops
+        //To print all array elements
+        //for loop
+        var array=[1,2,3,4,5,6,7,8]
+        for(i=0; i<array.length;i++)
+        {
+            console.log(array[i]);
+        }
+
+        //foreach loop
+        array.forEach(function(element)
+        {
+        console.log(element)
+        })
+
+        
+        
+
+
+        
+
 
 
