@@ -195,19 +195,112 @@
         }  */
 
         //Loops
-        //To print all array elements
-        //for loop
-        var array=[1,2,3,4,5,6,7,8]
-        for(i=0; i<array.length;i++)
+        //for loop to print % times
+        for(var i=1; i<=5; i++)
         {
-            console.log(array[i]);
+            console.log("Gauri Wakchaure"); // 5 Times executed
         }
 
-        //foreach loop
-        array.forEach(function(element)
+        //Program to print sum of 1 to 7 numbers
+        var sum=0;
+        for(var i=1; i<=7; i++)
         {
-        console.log(element)
-        })
+            sum+=i;
+        }
+        console.log("Sum of 1 to 7 numbers is: "+sum);
+
+        //Program to print even odd no
+        var n=178;
+        for(var i=1; i<=n; i++)
+        {
+            if(n%2==0)
+            {
+                console.log("Number is even");
+            }
+            else{
+                console.log("Number is odd");
+            }
+        }
+
+        //Program to print factorial
+        var num=7;
+        var fact=1;
+        for(var i=1; i<=7; i++)
+        {
+            fact*=i;
+        }
+        console.log("Factorial of 7 is: "+fact);
+
+       // Print 1 to 20 Even numbers
+       for(var i=1; i<=20; i++)
+       {
+        if(i%2==0)
+        {
+            console.log(i);
+        }
+       }
+
+       //Print 1 to 30 Odd numbers
+       for(var i=1; i<=30; i++)
+       {
+        if(i%2!=0)
+        {
+            console.log(i);
+        }
+       }
+
+       //Print sum of 1 to 40
+       var sum=0;
+       for(var i=1; i<=40; i++)
+       {
+        sum+=i;
+       }
+       console.log("Sum of 1 to 40 numbers: "+sum);
+
+       //Multiplication Table
+       var num= 17;
+       for(var i=1; i<=10; i++)
+       {
+        console.log(num*i);
+       }
+      
+       //Prime numbers
+       var n=6;
+       var count =0;
+       for (var i=1; i<=n; i++)
+       {
+        if(n%i==0)
+        {
+            count++;
+        }
+       }
+       if(count==2)
+       {
+        console.log("Prime number");
+       }
+       else{
+        console.log("Not Prime number");
+       }
+
+       //Fibonacci Series
+       var a=0, b=1;
+       for(var i=1; i<=40; i++)
+       {
+        console.log(a);
+         var c=a+b;
+         a=b;
+         b=c;
+       }
+
+
+
+
+
+
+
+       
+
+
 
         
         
