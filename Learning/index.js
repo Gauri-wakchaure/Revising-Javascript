@@ -196,6 +196,7 @@
 
         //Loops
         //for loop to print % times
+        //For Loop
         for(var i=1; i<=5; i++)
         {
             console.log("Gauri Wakchaure"); // 5 Times executed
@@ -284,7 +285,7 @@
 
        //Fibonacci Series
        var a=0, b=1;
-       for(var i=1; i<=40; i++)
+       for(var i=1; i<=10; i++)
        {
         console.log(a);
          var c=a+b;
@@ -292,21 +293,138 @@
          b=c;
        }
 
+       //while Loop
+       var array1=[1,2,3,4,5,6,7,8,9,10];
+       var j=0;
+       while(j<array1.length)
+       {
+        console.log(array1[j]);
+        j++;
+       } 
 
+       //Do while loop
+        // var j=0;
+        // do{
+        //     console.log(array1[j]);
+        //     j++;
+        // }while(j<array1.length);
 
+        var arr1=[12,22,32,42,52,62,72,82];
+        for(var i=0; i<arr1.length;i++)
+        {
+            if(i==4)
+            {
+                //break;
+                continue;
+            }
+            console.log(arr1[i]);
+        }
 
+        // var myarr=["Gauri", "America", 65, null, true];
+        // //Array Methods
+        console.log(myarr.length);
+        //myarr.pop();
+        myarr.push("Happy");
+        //myarr.shift();
+        //const newlen=(myarr.unshift("Happy"));
+        //console.log(newlen);
+        //myarr.toString()
+        myarr.sort();
+        console.log(myarr);
 
+        //String Methods
+        let mystring="Gauri is a Software Developer";
+        console.log(mystring.length);
+        console.log(mystring.indexOf("Software"))
+        console.log(mystring.lastIndexOf("Software"))
+        console.log(mystring.slice(2,5))
+        console.log(mystring.replace("Gauri","Gauree"))
 
-
-       
-
-
-
+        let myDate= new Date();
+        console.log(myDate);
+        console.log(myDate.getTime())
+        console.log(myDate.getFullYear())
+        console.log(myDate.getDay())
         
-        
+        // DOM Manipulation
+        let ele=document.getElementById('clickme');
+        console.log(ele);
 
+        let eleclass=document.getElementsByClassName('container');
+        console.log(eleclass);
+        eleclass[0].style.background="violet";
 
-        
+        let eleTag=document.getElementsByTagName('button');
+        eleTag[0].style.background="Green";
+        console.log(eleTag);
 
+        let eleTag1=document.getElementsByTagName('h1');
+        eleTag1[0].style.background="SkyBlue";
+        console.log(eleTag1);
+        createElement=document.createElement('p');
+        createElement.innerText="I'm Software Developer";
+        eleclass[0].appendChild(createElement);
 
+        // Selecting using Query
+        sel = document.querySelector('.container')
+        console.log(sel)
+        sel = document.querySelectorAll('.container')
+        console.log(sel)
 
+        function clicked(){
+            console.log('The button was clicked')
+        }
+
+        window.onload= function()
+        {
+            console.log('The document was loaded')
+        }
+
+        // Events in Javascript
+        firstContainer.addEventListener('clickme', function()
+        {
+        console.log("Click Hua")
+        })
+
+        firstContainer.addEventListener('mouseov', function()
+        {
+        console.log("Mouse on Container")
+        })
+
+        //Arrow function
+        function summ(a,b)
+        {
+            return a+b;
+        }
+
+        //We can also used arrow function instead of function
+        //We used this when we have to insert function in a middle of program
+        summ=(a,b)=>
+        {
+            return a+b;
+        }
+
+        // SetTimeout and Setinterval
+        //When we have to set schedule for anything we have to use setTimeout
+        login=()=>
+        {
+            console.log("I am log in");
+        }
+         setTimeout(login, 3000);
+
+        //When we have to set schedule for anything repetedly we have to use setInterval
+        // To stop set interval use clr
+         //setInterval(login, 3000);
+
+         //Javasript localStorage
+         localStorage.setItem('name','Gauri')
+         localStorage
+         localStorage.getItem('name','Gauri')
+         'Gauri'
+         localStorage.removeItem('name')
+
+        // JSON
+        obj={name: "Gauri", length:1, a:{this: 'tha"t'}}
+        jso=JSON.stringify(obj)
+        console.log(typeof jso)
+        console.log(jso)     
