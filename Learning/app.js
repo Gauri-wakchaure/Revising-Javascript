@@ -77,3 +77,127 @@ if((str1[0]==='a') && (str1.length>3))
 else{
     console.log("It is not Good string");
 }
+
+//Switch Statement Example
+let color1="Green";
+switch(color1){
+    case "Red":
+        console.log("Stop");
+        break;
+    case "Yellow":
+        console.log("Go Slow");
+        break;
+    case "Green":
+        console.log("Go");
+        break;
+    default:
+        console.log("Broken Light");
+}
+
+//Switch Statement Example-2
+let day=7;
+switch(day){
+    case 1:
+        console.log("Monday");
+        break;
+    case 2:
+        console.log("Tuesday");
+        break;
+    case 3:
+        console.log("Wednesday");
+        break;
+    case 4:
+        console.log("Thursday");
+        break;
+    case 5:
+        console.log("Friday");
+        break;
+    case 6:
+        console.log("Saturday");
+        break;
+    case 7:
+        console.log("Sunday");
+        break;
+    default:
+        console.log("Invalid Day");   
+}
+
+//Alert
+//alert("Something is wrong");
+//console.log("hello from console");
+//console.error("This is error message");
+//console.warn("This is warning message");
+
+//Prompt
+/* let fname=prompt("Enter Your Name");
+let  lname=prompt("Enter Last Name");
+let msg=("Welcome "+ fname+ ""+ lname+ "!");
+alert(msg); */
+
+//Practice Question-1
+let Num4=57;
+if(Num4%10==0){
+    console.log("Good");
+}else{
+    console.log("Bad");
+}
+
+//Practice Question-2
+/* let uname=prompt("Enter Your name");
+let u_age=prompt("Enter Your Age");
+let Information=(uname+" is "+ u_age+ " years old");
+alert(Information);*/
+
+//Practice Question-3
+let Quarter=2;
+switch(Quarter){
+case 1:
+    console.log("January, February, March");
+    break;
+case 2:
+    console.log("April, May, June");
+    break;
+case 3:
+    console.log("July, August, September");
+    break;
+case 4:
+    console.log("October, November, December");
+    break;
+default:
+    console.log("Invalid  Quarter");
+}
+
+//Practice Question-4
+let String1="auto";
+if((String1[0]==='a' || String1[0]==='A') && String1.length>5){
+    console.log("Golden String");
+}else{
+    console.log("Not a Golden String");
+}
+
+//Practice Question-5
+let n1=32;
+let n2=47852;
+if((n1%10) == (n2%10)){
+    console.log("Numbers have same digit");
+}else{
+    console.log("Numbers don't have same digit");
+}
+
+//practice Question-6
+let a1=4;
+let b1=67;
+let c1=46;
+if(a1>b1){
+   if(a1>c1){
+    console.log(a1, "is largest");
+   }else{
+    console.log(c1, "is largest");
+   }
+}else{
+    if(b1>c1){
+        console.log(b1, "is largest");
+    }else{
+        console.log(c1, "is largest");
+    }
+}
