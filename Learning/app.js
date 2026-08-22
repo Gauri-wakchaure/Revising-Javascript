@@ -215,3 +215,50 @@ name.replace("Apna", "Our")   //'OurCollege'
 name.slice(4)  //'College'
 name.slice(4).replace('l','t')  //'Cotlege'
 
+//Array Practice Questions
+//Question 1
+let Array=['january', 'july', 'march','august'];
+Array.shift();   //'january'
+Array.shift();   //'july'
+Array.unshift("july");  // ['july', 'march', 'august']
+Array.unshift("january");  // ['january', 'july', 'march', 'august']
+
+//Array Question 2:Splice Reversed
+let Array1=['january', 'july','march','august'];
+Array1.splice(0,2,"july","june"); //['january', 'july']
+
+let lang=['c', 'c++', 'javascript','python','java','c#','sql'];
+lang.reverse();  //(7) ['sql', 'c#', 'java', 'python', 'javascript', 'c++', 'c']
+lang.indexOf("javascript");  //4
+
+let game=[['X',null,'O'],[null,'X',null],['O',null,'X']];
+
+//JS-Part 3 Questions
+//Question-1
+let FArray=[5,6,7,-4,3,8,9];  
+//[5,6,7,-4,3,8,9];
+FArray.slice(0,5);   
+//(5) [5, 6, 7, -4, 3]
+
+//Question-2
+FArray.slice(3);  
+//(4) [-4, 3, 8, 9]
+
+//Question-5
+let s1="      Gauri     ";
+s1.trim();   //'Gauri'
+
+//Question-4
+let a3=["App","Run","Code"];
+a3.includes("Gauri");   //false
+a3.includes("Code");    //true
+
+
+
+
+
+
+
+
+
+
