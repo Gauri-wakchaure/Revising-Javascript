@@ -29,10 +29,20 @@ for(let m=3; m<=30; m=m+3)
     console.log(m);
 }
 
-let n=prompt("Enter Your Number");
+/* let n=prompt("Enter Your Number");
 n=parseInt(n);
 
 for(let t1=n; t1<=n*10; t1=t1+n){
     console.log(t1);
-}
+} */
 
+//Break Keyword
+let i1=1;
+while(i1<=5){
+    if(i1==3){
+        break;
+    }
+    console.log(i1);
+    i1++;
+}
+console.log("We used Break at 3");
