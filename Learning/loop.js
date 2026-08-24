@@ -46,3 +46,45 @@ while(i1<=5){
     i1++;
 }
 console.log("We used Break at 3");
+
+//Arrays with Loops
+let fruits=["apple","mango","banana","guava","litchi","papaya"];
+/* for(let i2=0; i2<fruits.length;i2++){
+    console.log(i2,fruits[i2]);
+} */
+
+/*  for(let i2=fruits.length-1; i2>=0; i2--){
+        console.log(i2, fruits[i2]);
+    } */
+
+let colors=[
+    ["Red", "Green", "Blue"],
+    ["White", "Black", "Gray"]
+];
+
+for(let i4=0; i4<colors.length; i4++){
+    console.log(i4, colors[i4], colors[i4].length);
+    for(let j4=0; j4<colors[i4].length; j4++){
+        console.log(`j4=${j4}, ${colors[i4][j4]}`);
+    }
+}
+
+//Array with For Of Loop
+let phones=["Redmi", "Vivo", "IPhone", "RealMe", "MicroMax"];
+for(phone of phones){
+    console.log(phone);
+}
+
+for(char of "Gauri"){
+    console.log(char);
+}
+
+let heroes=[["SpiderMan", "BatMan", "IronMan"],
+["Thor", "Wonder Women", "Flash"]
+];
+
+for(list of heroes){
+    for(name of list){
+        console.log(name);
+    }
+}
