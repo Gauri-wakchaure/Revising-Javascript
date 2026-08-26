@@ -80,7 +80,7 @@ if(number%3==0 && number%5==0){
 }
 
 //Question-10
-let user_IP1=parseInt(prompt("Enter First Number"));
+/* let user_IP1=parseInt(prompt("Enter First Number"));
 let user_IP2=parseInt(prompt("Enter Second Number"));
 let choice=prompt("Enter Your Choice");
 switch(choice) {
@@ -101,5 +101,49 @@ switch(choice) {
         break;
     default:
         console.log("Wrong Choice");
+} */
+
+//Level-2 Strings
+//Question-11
+let val1="   Television   ";
+val1.trim();           //'Television'
+val1.length;           //16
+val1.toUpperCase();    //'   TELEVISION   '
+val1.toLowerCase();    //'   television   '
+  
+//Question-12
+let x="Airoplane";
+x.indexOf("a");        //6
+
+//Question-13
+let q="RajNandini";
+q.includes("Raj");     //true
+
+//Question-14
+let d="Assignment";
+d.slice(0,6);           //'Assign'
+
+//Question-15
+let r1="Gauri-Hello";
+r1.replace("Hello","Wakchaure");     //'Gauri-Wakchaure'
+
+//Question-16
+let name4="Gauri";
+let age4=21;
+console.log(`My name is ${name4} and I am ${age4} years old`);
+//My name is Gauri and I am 21 years old
+
+//Question-17
+let str1="ChatGPT";
+let reverse=str1.split("").reverse().join("");
+console.log(reverse);
+
+//Question-18
+let s="madam";
+let reverse1=s.split("").reverse().join("");
+if(s==reverse1){
+    console.log("Palindrome String");
+}else{
+    console.log("Not Palindrome String ")
 }
-    
+
