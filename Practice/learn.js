@@ -147,3 +147,41 @@ if(s==reverse1){
     console.log("Not Palindrome String ")
 }
 
+//Level-3 Arrays
+//Question-19
+let array=["Apple", "Banana", "Papaya", "WaterMalon", "Litchi", "Pineapple"];
+array.push("Cherry");
+//['Apple', 'Banana', 'Papaya', 'WaterMalon', 'Litchi', 'Pineapple', 'Cherry']
+array.pop();
+//'Cherry'
+//['Apple', 'Banana', 'Papaya', 'WaterMalon', 'Litchi', 'Pineapple']
+array.unshift("Cherry");
+//['Cherry', 'Apple', 'Banana', 'Papaya', 'WaterMalon', 'Litchi', 'Pineapple']
+array.shift();
+//'Cherry'
+//['Apple', 'Banana', 'Papaya', 'WaterMalon', 'Litchi', 'Pineapple']
+
+//Question-20
+array.indexOf("WaterMalon");   //3
+
+//Question-21
+array.includes("Apple");       //true
+
+//Question-22
+let array1=["Red","Green","Blue"];
+let array2=["Black","White","Gray"];
+array1.concat(array2);
+   //['Red', 'Green', 'Blue', 'Black', 'White', 'Gray']
+
+//Question-23
+let flowers=["Lotus","Rose","Mogra", "Jasmine","Lily"];
+flowers.slice(0,3);
+    //(3) ['Lotus', 'Rose', 'Mogra']
+
+//Question-24
+flowers.splice(3,1,"Daisy");
+   //['Jasmine']
+   //flowers
+   //(5) ['Lotus', 'Rose', 'Mogra', 'Daisy', 'Lily']
+
+//Question-25
