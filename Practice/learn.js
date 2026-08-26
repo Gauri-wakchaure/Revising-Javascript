@@ -185,3 +185,26 @@ flowers.splice(3,1,"Daisy");
    //(5) ['Lotus', 'Rose', 'Mogra', 'Daisy', 'Lily']
 
 //Question-25
+let n=flowers.length;
+for(let i=0; i<n; i++){
+    for(let j=i+1; j<n; j++){
+       if(flowers[i]>flowers[j]){
+        let temp=flowers[i];
+        flowers[i]=flowers[j];
+        flowers[j]=temp;
+       }
+    }
+}
+for(let i=n-1; i>=0; i--){
+    console.log(flowers[i]);
+}
+
+//Question-26
+let arr1=[10,25,5,40,15];
+let max=arr1[0];
+for(let i1=0; i1<arr1.length; i1++){
+    if(arr1[i1] > max){
+    max = arr1[i1];
+}
+}
+console.log(max + " is largest");
