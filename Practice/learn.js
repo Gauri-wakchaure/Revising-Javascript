@@ -304,3 +304,17 @@ while(value1>0){
     value1=Math.floor(value1/10);
 }
 console.log(sum_of_value);
+
+//Question-37
+let Prime=7;
+let isPrime=true;
+for(let p=2; p<=Prime-1; p++){
+if(Prime%p==0){
+    isPrime=false;
+  }
+}
+if(isPrime==true){
+    console.log(Prime+" is Prime number");
+}else{
+    console.log(Prime+" is not Prime number");
+}
