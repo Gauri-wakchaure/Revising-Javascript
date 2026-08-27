@@ -284,7 +284,7 @@ for(let f1=1; f1<=5; f1++){
 console.log(fact);
 
 //Question-35
-let NUM=12345;
+/* let NUM=12345;
 let reverse_no=0;
 while(NUM>0){
     let digit=NUM%10;
@@ -292,5 +292,15 @@ while(NUM>0){
     NUM=Math.floor(NUM/10);
 }
 console.log(reverse_no);
+*/
 
 //Question-36
+let value1=12345;
+let sum_of_value=0;
+let digit;
+while(value1>0){
+    digit=value1%10;
+    sum_of_value=sum_of_value+digit;
+    value1=Math.floor(value1/10);
+}
+console.log(sum_of_value);
