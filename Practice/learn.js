@@ -208,3 +208,49 @@ for(let i1=0; i1<arr1.length; i1++){
 }
 }
 console.log(max + " is largest");
+
+//Question-27
+/* let arr2=[10,25,5,40,3,15];
+let min=arr2[0];
+for(let i2=0; i2<arr2.length; i2++){
+    if(arr2[i2] < min){
+        min=arr2[i2];
+    }
+}
+console.log(min+" is Smallest Element");
+*/
+
+//Question-28
+/* let arr2=[10,25,5,40,3,15,80];
+let sum=0;
+for(let i2=0; i2<arr2.length; i2++){
+    sum=sum+arr2[i2];
+}
+console.log("Sum of Array Elements: "+sum);
+*/
+
+//Question-29
+let arr2=[10,25,5,40,3,15,24,78,69];
+let evencount=0;
+let oddcount=0;
+for(let i2=0; i2<arr2.length; i2++){
+    if(arr2[i2]%2==0){
+        evencount++;
+    }else{
+        oddcount++;
+    }
+}
+console.log("Even Numbers count: "+evencount);
+console.log("Odd Numbers count: "+oddcount);
+
+//Question-30
+let arr3=[1,2,3,3,4,4,5,5,6];
+for(let i3=0; i3<arr3.length; i3++){
+    for(let j3=i3+1; j3<arr3.length; j3++){
+      let dup=arr3[i3];
+      if(dup==arr3[j3]){
+      arr3.splice(j3,1);
+    }
+    }   
+}
+console.log(arr3);
