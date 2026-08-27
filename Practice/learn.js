@@ -254,3 +254,43 @@ for(let i3=0; i3<arr3.length; i3++){
     }   
 }
 console.log(arr3);
+
+//Level 4- Loops & Logic
+//Question-31
+let y=10;
+for(let y1=1; y1<=y; y1++){
+    console.log(y1);
+}
+
+//Question-32
+let even_no=50;
+for(let e=0; e<=50; e++){
+    if(e%2==0){
+       console.log(e);
+    }
+}
+
+//Question-33
+let mul_table=5;
+for(let m=1; m<=10; m++){
+    console.log(mul_table*m);
+}
+
+//Question-34
+let fact=1;
+for(let f1=1; f1<=5; f1++){
+    fact=fact*f1;
+}
+console.log(fact);
+
+//Question-35
+let NUM=12345;
+let reverse_no=0;
+while(NUM>0){
+    let digit=NUM%10;
+    reverse_no=reverse_no*10+digit;
+    NUM=Math.floor(NUM/10);
+}
+console.log(reverse_no);
+
+//Question-36
