@@ -327,3 +327,30 @@ Person
 Object { name: "Gauri", age: 21, city: "New York", country: "United States" }
 */
 
+//JS Part-6
+//Print Poem Create a function
+function printPoem(){
+    console.log("Twinkle twinkle little star");
+    console.log("How I wonder, What you are");
+}
+printPoem();
+printPoem();
+printPoem();
+
+//Create function to roll dice & always display the value of the dice (1to6)
+function rollDice(){
+    let dice2=Math.floor(Math.random() * 6)+1;
+    console.log("Dice: "+dice2);
+}
+rollDice();
+rollDice();
+rollDice();
+rollDice();
+rollDice();
+
+function avgNum(a, b, c){
+    let avg=(a+b+c)/3;
+    console.log("Average of 3 numbers is: "+avg);
+}
+avgNum(23,34,56);
+avgNum(22,22,22);
