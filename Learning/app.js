@@ -262,11 +262,11 @@ const Post={
     tags:["Gau", "Hello"]
 };
 
-//Generate randome numbers
+//Generate random numbers
 let step1=Math.floor(Math.random()*100);
 
 //Number Guessing Game
-const max=prompt("Enter Max Number");
+/* const max=prompt("Enter Max Number");
 const random=Math.floor(Math.random()*max)+1;
 
 let guess=prompt("Guess the number");
@@ -284,10 +284,46 @@ while(true){
     else {
         guess = prompt("hint: Your guess was too large, Please try again");
     }
-}
+}  */
 
+//JS Part-5 Questions
+//Question-1
+let dice = Math.floor(Math.random() * 6) + 1;
 
+console.log("Dice:", dice);
 
+//Question-2
+const car={
+    name:"Mercedes",
+    Model:"A-class",
+    color:"Black"
+};
+//car["name"];
+//"Mercedes"
 
+  //​Question-3
+let Person={
+    name: "Gauri",
+    age: 21,
+    city: "Pune"
+};
+/* Person
+Object { name: "Gauri", age: 21, city: "Pune" }
+Person.city;
+"Pune"
+Person.city = "New York";
+"New York"
+Person.city;
+"New York"
+Person
+Object { name: "Gauri", age: 21, city: "New York" }
+*/
 
+/*Person.country;
+undefined
+Person.country = "United States";
+"United States"
+Person
+Object { name: "Gauri", age: 21, city: "New York", country: "United States" }
+*/
 
