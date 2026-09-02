@@ -411,3 +411,50 @@ let greet1=function() {
     console.log("hello");
 }
 multipleGreet(greet1, 10);
+
+//JS Part-6 practice Questions
+//Question-1
+let array=[10,20,30,35,46,56,67,79,84,92,100];
+function findElement(f1){
+    for(let f=0; f<array.length; f++){
+        if(array[f]>f1){
+        console.log(array[f]);
+        }
+    }
+}
+findElement(50);
+
+//Question-2
+let array2=["Australia", "Germany", "United States of America"];
+function findCountry(){
+    let longest = array2[0];
+    for(let c=0; c<array2.length; c++){
+        if(array2[0].length<array2[c].length){
+        longest = (array2[c]);
+        }
+    }
+    console.log(longest);
+}
+findCountry();
+
+//Question-3
+function countVowels(str2){
+    let vowels="aeiouAEIOU";
+    let count=0;
+    for(let v=0; v<str2.length; v++){
+        console.log(str2[v]);
+        if(vowels.includes(str2[v])){
+            count++;
+        }
+    }
+    console.log("Number of vowels: "+count);
+}
+countVowels("Gauri Wakchaure");
+
+//Question-4
+function random_no(){
+    let random=Math.floor(Math.random()*10)+1;
+    console.log(random);
+}
+random_no();
+
