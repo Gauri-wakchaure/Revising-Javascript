@@ -348,9 +348,66 @@ rollDice();
 rollDice();
 rollDice();
 
+//Create a function to print avg of 3 numbers
 function avgNum(a, b, c){
     let avg=(a+b+c)/3;
     console.log("Average of 3 numbers is: "+avg);
 }
 avgNum(23,34,56);
 avgNum(22,22,22);
+avgNum(22,36,58);
+
+//Create a function that prints multiplication table of a number
+function mulTable1(mt1){
+    for(let i=1; i<=10; i++){
+       console.log(i*mt1);
+    }
+}
+//mulTable1(7);
+//mulTable1(17);
+
+//Create a function that returns the sum of numbers from 1 to n
+function printSum(n){
+    let sum=0;
+    for(let i=1; i<=n; i++){
+        sum += i;
+    }
+    return sum;
+}
+printSum(10);
+
+//Concat all strings
+let str=["hi", "hello", "Bye","!"];
+
+function concat(str) {
+    let result="";
+    for(let i1=0; i1<str.length; i1++){
+        result=result+str[i1];
+    }
+    return result;
+}
+
+//Scope 
+let greet= "hello";    //Global Scope
+
+function changeGreet(){
+    let greet="namaste";     //Function Scope
+    console.log(greet);
+    function innerGreet(){
+        console.log(greet);      //Lexical Scope
+    }
+    innerGreet();
+}
+console.log(greet);
+changeGreet();
+
+//Functional Expression
+function multipleGreet(func, count){
+    for(let g=1; g<=count; g++){
+        func();
+    }
+}
+let greet1=function() {
+    console.log("hello");
+}
+multipleGreet(greet1, 10);
