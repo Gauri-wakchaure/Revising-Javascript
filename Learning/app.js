@@ -458,3 +458,39 @@ function random_no(){
 }
 random_no();
 
+//This Keyword
+const student={
+    name: "Gauri",
+    age: 22,
+    eng: 89,
+    hin: 96,
+    mar: 95,
+    getavg() {
+        let avg=(this.eng + this.hin + this.mar) / 3;
+        console.log("Average of three subjects is: "+avg);
+    }
+}
+
+//Try and Catch Block
+console.log("Hello Gauri");
+console.log("Hello Hii");
+try{
+console.log(z);
+}catch(e){
+    console.log("Error: z is not defined");
+}
+console.log("Hello September");
+console.log("It's My Birthday");
+
+//Arrow Function
+const SUM=(a, b) =>{
+    console.log(a+b);
+};
+
+const cube=(n)=>{
+    return n*n*n;
+};
+
+const sroot=(z) =>{
+    return z*z;
+};
