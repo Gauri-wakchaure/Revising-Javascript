@@ -494,3 +494,32 @@ const cube=(n)=>{
 const sroot=(z) =>{
     return z*z;
 };
+
+const hello=() =>{
+    console.log("Hello World");
+}
+
+//Implicit Return
+const mul=(x, y)=>(
+    x*y
+);
+
+const div=(p, q) =>(p/q);
+
+//Set Timeout
+/* console.log("Hello");
+
+setTimeout(()=>{
+    console.log("Gauri Wakchaure");
+},5000);
+console.log("welcome");
+*/
+
+//Set Interval
+  console.log("Hello");
+
+let id = setInterval(()=>{
+    console.log("Gauri Wakchaure");
+},5000);
+console.log("welcome");
+
