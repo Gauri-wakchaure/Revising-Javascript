@@ -586,5 +586,74 @@ const object1 ={
         callback();
     }
 }
-
 object1.method(callback, 1, 2);
+
+//Array Methods
+// 1. forEach loop
+let arr0=[1,2,3,4,5,6,7]
+let print=function(el){
+    console.log(el);
+};
+arr0.forEach(print);
+
+let arr6=[
+{
+  name: "Gauri",
+  marks: 92,
+},
+{
+ name: "Pari",
+ marks: 70,
+},
+{
+  name: "Siya",
+  marks: 85,
+}
+];
+arr6.forEach((student) =>{
+    console.log(student.name);
+});
+
+//2. Map Method
+let num10 = [1,2,3,4,5];
+let double = num10.map((el) => {
+    return el*el;
+});
+
+let arr7=[
+{
+  name: "Gauri",
+  marks: 92,
+},
+{
+ name: "Pari",
+ marks: 70,
+},
+{
+  name: "Siya",
+  marks: 85,
+}
+];
+
+let gpa = arr7.map((el) => {
+  return el.marks/10;
+});
+
+// 3. Filter Method
+let nums=[1,2,3,4,5,6,7,8,9,10,12,14,17,1,2,47];
+let ans= nums.filter((el) => {
+   return el % 2 == 0;   //even=> true  
+});
+
+// 4. Every Method
+let method = [2,6,10,14];
+let ans1=method.every((el) => el%2==0);  //true
+
+// 5. Some Method
+let method1 = [2,6,5,10,7,14];
+let ans2=method1.some((el) => el%2==0);  //true
+
+// 6. Reduce method
+let method3 = [11,22,33,44,55,66,77];
+let ans3=method3.reduce((res, el) => (res+el));
+console.log(ans3);
