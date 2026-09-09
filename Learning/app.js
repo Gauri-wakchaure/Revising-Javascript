@@ -685,3 +685,41 @@ let ans8=arr8.reduce((min, el) => {
     }
 });
 console.log(ans8);
+
+//Spread Function
+let spread1=[10,2,4,5,4,73,3,1];
+let MinValue=Math.min(...spread1);
+console.log(MinValue);
+
+let oddnum=[1,3,5,7,9];
+let evennum=[2,4,6,8,10];
+let evenodd=[...evennum, ...oddnum];
+
+const data={
+    marks: 76,
+    name: "Reha",
+};
+let dataCopy={...data, country:"India", city:"Pune"};
+
+function sums(...args) {
+   //arguments
+   for(let i=0; i<args.length; i++){
+    console.log("You gave us: ", args[i]);
+   }
+}
+
+// Destructuring Array
+let names = ["tony","Bruce", "Petter", "Steve", "xyz","abc", "pqr"];
+let [winner, runnerUp, secondRunnerUp, ...others] = names;
+
+// Destructuring Objects
+const student1 = {
+    name: "Gauri",
+    age: 22,
+    class: 16,
+    subjects: ["English", "Hindi", "Marathi"],
+    username: "gauri123",
+    password: "abcd",
+};
+
+let {username, password } = student1;
