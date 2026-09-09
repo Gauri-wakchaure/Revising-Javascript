@@ -518,8 +518,25 @@ console.log("welcome");
 //Set Interval
   console.log("Hello");
 
-let id = setInterval(()=>{
+/* let id = setInterval(()=>{
     console.log("Gauri Wakchaure");
 },5000);
 console.log("welcome");
+*/
+
+//This keyword with arrow function
+const squareno = (s) =>{
+    console.log("Square of "+s+" is: "+(s*s));
+};
+squareno(7);
+
+let id1=setInterval(() =>{
+    console.log("Hello World");
+},2000);
+
+setTimeout(() =>{
+    clearInterval(id1);
+    console.log("Clear Interval Ran");
+    }, 11000);
+
 
