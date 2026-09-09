@@ -530,13 +530,61 @@ const squareno = (s) =>{
 };
 squareno(7);
 
-let id1=setInterval(() =>{
+/* let id1=setInterval(() =>{
     console.log("Hello World");
 },2000);
 
 setTimeout(() =>{
     clearInterval(id1);
     console.log("Clear Interval Ran");
-    }, 11000);
+}, 11000);
+*/
 
+//JS- Part 7 Questions
+//Question-1
+const isEven=(n1) =>{
+    if(n1%2==0){
+        console.log(n1+" is Even");
+    }else{
+        console.log(n1+" is Odd");
+    }
+}
+isEven(77);
 
+//Question-2
+let arr4=[1,2,3,4,5,6,7,8,9,10];
+const arrayAverage=(arr4)=>{
+    let sum=0;
+    for(let i=0; i<arr4.length; i++){
+        sum=sum+arr4[i];
+    }
+    let avg=sum/arr4.length;
+    console.log("Average of array elements is: "+avg);
+}
+arrayAverage(arr4);
+
+//Question-3
+const object={
+    message: 'Hello, World',
+
+    logMessage() {
+        console.log(this.message);
+    }
+};
+setTimeout(object.logMessage, 1000);
+//Output: Undefined
+
+//Question-4
+let length=4;
+function callback(){
+    console.log(this.length);
+}
+
+const object1 ={
+    length: 5,
+    method(callback) {
+        callback();
+    }
+}
+
+object1.method(callback, 1, 2);
