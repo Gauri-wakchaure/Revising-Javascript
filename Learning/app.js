@@ -654,6 +654,34 @@ let method1 = [2,6,5,10,7,14];
 let ans2=method1.some((el) => el%2==0);  //true
 
 // 6. Reduce method
-let method3 = [11,22,33,44,55,66,77];
-let ans3=method3.reduce((res, el) => (res+el));
+let method3 = [10,20,30,60];
+/* let ans3=method3.reduce((res, el) => (res+el));
 console.log(ans3);
+*/
+
+// Practice Questions
+//Question-1
+let ans4= method3.reduce((max, el) => {
+    if(el>max){
+        max=el;
+    }
+    return max;
+});
+console.log(ans4);
+
+//Question-2
+let ans5=method3.every((el) => {
+    return el%10==0;
+});
+console.log(ans5);
+
+//Question-3
+let arr8=[4,11,32,23,2,38,90,3];
+let ans8=arr8.reduce((min, el) => {
+    if(el<min){
+        return el;
+    }else{
+        return min;
+    }
+});
+console.log(ans8);
