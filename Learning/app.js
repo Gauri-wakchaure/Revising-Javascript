@@ -723,3 +723,16 @@ const student1 = {
 };
 
 let {username, password } = student1;
+
+// JS Part-8 Practice Questions
+//Question-1
+const mergeObjects =(obj1, obj2) =>({ ...obj1, ...obj2});
+mergeObjects({a:1, b:2}, {c:3, d:4});
+
+//Question-2
+let nums1=[1,2,3,4,5];
+const square=nums1.map((num1)=>num1*num1);
+console.log(square);
+let sum=square.reduce((acc,cur)=>acc+cur,0); 
+let avg=sum/nums1.length;
+console.log(avg);
