@@ -730,9 +730,37 @@ const mergeObjects =(obj1, obj2) =>({ ...obj1, ...obj2});
 mergeObjects({a:1, b:2}, {c:3, d:4});
 
 //Question-2
-let nums1=[1,2,3,4,5];
+/* let nums1=[1,2,3,4,5];
 const square=nums1.map((num1)=>num1*num1);
 console.log(square);
 let sum=square.reduce((acc,cur)=>acc+cur,0); 
 let avg=sum/nums1.length;
 console.log(avg);
+*/ 
+
+//JS Part-9 DOM Manipulation
+//Question-1
+let btn1=document.createElement("button");
+let input=document.createElement("input");
+btn1.innerText="Click Me";
+document.querySelector('body').append(btn1);
+document.querySelector('body').append(input);
+
+//Question-2
+btn1.setAttribute("id", "btn");
+input.setAttribute("placeholder", "username");
+
+//Question-3
+let btn=document.querySelector("#btn");
+btn.classList.add("btnStyle");
+
+//Question-4
+let h1 =document.createElement("h1");
+h1.innerHTML="<u>DOM Practice<u>";
+document.querySelector("body").append(h1);
+h1.style.color="Purple";
+
+//Question-5
+let p=document.createElement("p");
+p.innerHTML="Gauri wakchaure <b>Software<b> Developer";
+document.querySelector('body').append(p);
