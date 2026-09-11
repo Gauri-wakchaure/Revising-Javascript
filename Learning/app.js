@@ -764,3 +764,46 @@ h1.style.color="Purple";
 let p=document.createElement("p");
 p.innerHTML="Gauri wakchaure <b>Software<b> Developer";
 document.querySelector('body').append(p);
+
+//JS Part-10
+//Question-1
+//MouseOut Event
+let h2=document.createElement("h2");
+h2.innerHTML="Heyy! My Name is Gauri";
+document.querySelector("body").append(h2);
+h2.addEventListener("mouseout", function(){
+    console.log("Mouse out Event Occured");
+});
+
+//KeyPress Event
+let input1=document.createElement("input");
+document.querySelector('body').append(input1);
+input1.setAttribute("placeholder", "Enter Something here...");
+input1.addEventListener("keypress", function(){
+    console.log("Key Press event Ocuured");
+});
+
+//Scroll Event
+/* let scrollEvent=document.createElement("p");
+scrollEvent.innerText="Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc.Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc.Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc.Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc.Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc.";
+document.querySelector("body").append(scrollEvent);
+scrollEvent.style.height="60px";
+scrollEvent.style.overflow="scroll";
+scrollEvent.addEventListener("scroll", (event) =>{
+    console.log("Scroll event occured");
+    console.log("ScrollPosition: ", scrollEvent.scrollTop);
+}); */
+
+//load Event
+window.onload = (event) => {
+  console.log("page is fully loaded");
+};
+
+//Question-2
+let btn2=document.createElement("button");
+btn2.innerText="Submit";
+document.querySelector("body").append(btn2);
+btn2.addEventListener("mouseenter", function(){
+    btn2.style.backgroundColor="Green";
+    console.log("color Change");
+});
