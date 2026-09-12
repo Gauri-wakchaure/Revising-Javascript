@@ -776,12 +776,12 @@ h2.addEventListener("mouseout", function(){
 });
 
 //KeyPress Event
-let input1=document.createElement("input");
+/* let input1=document.createElement("input");
 document.querySelector('body').append(input1);
 input1.setAttribute("placeholder", "Enter Something here...");
 input1.addEventListener("keypress", function(){
     console.log("Key Press event Ocuured");
-});
+}); */
 
 //Scroll Event
 /* let scrollEvent=document.createElement("p");
@@ -800,10 +800,18 @@ window.onload = (event) => {
 };
 
 //Question-2
-let btn2=document.createElement("button");
+/* let btn2=document.createElement("button");
 btn2.innerText="Submit";
 document.querySelector("body").append(btn2);
 btn2.addEventListener("mouseenter", function(){
     btn2.style.backgroundColor="Green";
     console.log("color Change");
+});  */
+
+//Question-3
+let input2=document.querySelector("#text");
+let h3=document.querySelector("h3");
+input2.addEventListener("input", function(){
+    console.log(input2.value);
+    h3.innerText = input2.value;
 });
