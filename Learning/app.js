@@ -815,3 +815,103 @@ input2.addEventListener("input", function(){
     console.log(input2.value);
     h3.innerText = input2.value;
 });
+
+// Call-back Hell
+h1 = document.querySelector("h1");
+
+function changeColor(color, delay, nextColorChange) {
+    setTimeout(() => {
+        h1.style.color = color;
+        if(nextColorChange) nextColorChange();
+    }, delay);
+}
+
+changeColor("red", 1000, () => {
+    changeColor("green", 1000, () => {
+        changeColor("yellow", 1000, () => {
+            changeColor("blue", 1000, () => {
+                changeColor("pink", 1000);
+            });
+        });
+    });
+});
+
+// Promises Example
+/* function savetoDb(data, success, failure) {
+    let internetSpeed =Math.floor(Math.random() * 10) + 1;
+    if(internetSpeed > 4) {
+        success();
+    }else {
+        failure();
+    }
+} */
+
+/* savetoDb(
+    "Welcome Gauri",
+    () => {
+        console.log("Success : Your data was Saved");
+        savetoDb(
+            "Hello World",
+            () => {
+                console.log("Success2: data2 saved");
+                savetoDb(
+                    "Javascript",
+                    () => {
+                        console.log("Success3: Data3 saved");
+                    },
+                    () => {
+                        console.group("failure3 : weak connection");
+                    }
+                );
+            },
+            () => {
+                console.log("failure2: weak connection");
+            }
+        );
+    },
+    () => {
+        console.log("Failure: Weak connection. Data Not saved");
+    }
+); */
+
+// Promise Use
+function savetoDb(data) {
+    return new Promise((resolve, reject) => {
+    let internetSpeed =Math.floor(Math.random() * 10) + 1;
+    if(internetSpeed > 4) {
+        resolve("success: data was saved");
+    }else {
+        reject("failure: data not saved");
+    }
+});
+}
+
+//then and catch methods
+savetoDb("Gauri wakchaure")
+  .then(() => {
+    console.log("Promise was resolved");
+  })
+  .catch(() => {
+    console.log("Promise was rejected");
+  });
+
+// Promise Chaining
+savetoDb("Gauri Wakchaure")
+ .then((result) => {
+    console.log("Data1 saved");
+    console.log("result of promise: ",result);
+    return savetoDb("hello World");
+ })
+  .then((result) => {
+    console.log("Data2 saved");
+    console.log("result of promise: ",result);
+    return savetoDb("Shradhha")
+  })
+   .then((result) => {
+    console.log("Data3 saved");
+    console.log("result of promise: ",result);
+   })
+   .catch((error) => {
+    console.log("Promise was rejected");
+    console.log("result of promise: ",error);
+   });
