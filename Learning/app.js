@@ -915,3 +915,7 @@ savetoDb("Gauri Wakchaure")
     console.log("Promise was rejected");
     console.log("result of promise: ",error);
    });
+
+async function greet3() {
+    return "Hello World";
+}
