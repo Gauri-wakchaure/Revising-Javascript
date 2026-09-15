@@ -919,3 +919,30 @@ savetoDb("Gauri Wakchaure")
 async function greet3() {
     return "Hello World";
 }
+
+// JSON data accessing using parse method
+let jsonRes ='{"fact":"Some common houseplants poisonous to cats include: English Ivy, iris, mistletoe, philodendron, and yew.","length":103}';
+let validRes = JSON.parse(jsonRes);
+console.log(validRes.fact); 
+
+// JSOn data converting using stringfy
+let newStudent = {
+    name:" Shraddha",
+    marks: 65,
+};
+JSON.stringify(newStudent);
+    // Output: '{"name":" Shraddha","marks":65}'
+
+// First API Request using fetch
+let url ="https://catfact.ninja/fact";
+
+fetch(url)
+.then((response) => {
+    console.log(response);
+    response.json().then((data) => {
+        console.log(data);
+    });
+})
+.catch((err) => {
+    console.log("ERROR - ", err);
+});
